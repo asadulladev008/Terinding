@@ -1,0 +1,745 @@
+/* @font-face {
+  font-family: zilla slab, serif;
+  src: url(./assets/fonts/Zilla_Slab/ZillaSlab-Bold.ttf);
+}
+
+@font-face {
+  font-family: ZillaSlab, serif;
+  src: url(./assets/fonts/Zilla_Slab/ZillaSlab-BoldItalic.ttf);
+}
+
+@font-face {
+  font-family: ZillaSlab, sans-serif;
+  src: url(./assets/fonts/Zilla_Slab/ZillaSlab-Italic.ttf);
+}
+
+@font-face {
+  font-family: ZillaSlab, serif;
+  src: url(./assets/fonts/Zilla_Slab/ZillaSlab-LightItalic.ttf);
+}
+
+@font-face {
+  font-family: ZilaSlab, serif;
+  src: url(./assets/fonts/Zilla_Slab/ZillaSlab-MediumItalic.ttf);
+}
+
+@font-face {
+  font-family: ZillaSlab, serif;
+  src: url(./assets/fonts/Zilla_Slab/ZillaSlab-SemiBoldItalic.ttf);
+}
+
+@font-face {
+  font-family: ZillaSlab, serif;
+  src: url(./assets/fonts/Zilla_Slab/ZillaSlab-Light.ttf);
+}
+
+@font-face {
+  font-family: ZillaSlab;
+  src: url(./assets/fonts/Zilla_Slab/ZillaSlab-Medium.ttf);
+}
+
+@font-face {
+  font-family: ZillaSlab;
+  src: url(./assets/fonts/Zilla_Slab/ZillaSlab-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: La Belle Aurore;
+  src: url(./assets/fonts/La_Belle_Aurore/LaBelleAurore-Regular.ttf);
+}
+
+@font-face {
+  font-family: zila-slab, regular;
+  src: url(./assets/fonts/Zilla_Slab/ZillaSlab-Regular.ttf);
+} */
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 140px;
+  height: 6696px;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  margin-left: 200px;
+  background: var(--based-color-background, #e2ddce);
+}
+button {
+  font-family: zilla slab;
+}
+
+.contain {
+  display: flex;
+  justify-content: baseline;
+  align-items: baseline;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul {
+  list-style: none;
+}
+button,
+input,
+input:active,
+input:focus {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/* ================== NAVBAR-TOP ====================== */
+.nav-top p {
+  color: var(--complement-white, #c4c4c4);
+  font-family: Zilla Slab, serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 22.4px */
+  letter-spacing: 0.42px;
+}
+.navbar {
+  width: 593px;
+  height: 593px;
+  /* border-top: 220px; */
+  background: linear-gradient(
+      0deg,
+      rgba(251, 237, 211, 0) 76.74%,
+      #fbedd3 96.78%
+    ),
+    lightgray -366.441px 0px / 162.881% 100% no-repeat;
+  background: url("./assets/images/Image\ \(6\).png");
+}
+
+.navbar .link .ul-link {
+  margin: 28px 623px 92px 80px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  text-transform: uppercase;
+}
+
+.navbar .link .ul-link .links {
+  color: var(--complement-ruined-smores, #0c0d12);
+  font-family: Zilla Slab, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  letter-spacing: 0.6px;
+}
+
+.navbar .link .ul-link .links :hover {
+  font-family: Zilla Slab, serif;
+  font-size: 24px;
+  font-style: oblique;
+  font-weight: 500;
+  color: rgb(255, 0, 43);
+  transition: 0.2s ease-in;
+}
+
+/* ================ LAYER ======================== */
+
+.layer {
+  width: 853px;
+  height: 593px;
+  background: var(--based-color-background, #e4dbc3);
+}
+
+.layer .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.layer .container .logo {
+  width: 119px;
+  height: 46px;
+  margin: 21px 616px 661px 67px;
+}
+
+.layer .container span {
+  display: flex;
+  width: 24px;
+  height: 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  margin: -32px 50px 50px 540px;
+  cursor: pointer;
+}
+
+.layer .container span img:hover {
+  transition: 0.5s linear;
+  background: antiquewhite;
+  transition-delay: 0.3s;
+  width: 32px;
+  height: 32px;
+  color: darkcyan;
+}
+
+.layer .container span button {
+  display: flex;
+  width: 115px;
+  padding: 12px 18px;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  border-radius: 30px;
+  border: 1px solid var(--complement-ruined-smores, #0c0d12);
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.layer .container span button:hover {
+  background: radial-gradient(rgb(30, 87, 243));
+  transition: 0.2s all linear;
+  color: rgb(18, 135, 245);
+  /* border: 3px s#olid red; */
+  font-size: 14px;
+}
+
+.layer .container .infos {
+  display: flex;
+  width: 690px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+  column-gap: 8px;
+}
+
+.layer .container .infos h1 {
+  align-self: stretch;
+  color: var(--dark-300, #555659);
+  font-family: Zilla Slab, serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 28.8px */
+  letter-spacing: 4.32px;
+  margin-top: 10px;
+  margin-left: -650px;
+  /* background: red; */
+}
+
+.layer .container .infos p {
+  align-self: stretch;
+  color: var(--complement-ruined-smores, #0c0d12);
+  font-family: ZillaSlab, serif;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 72px */
+  letter-spacing: 1.8px;
+  margin-top: -10px;
+  margin-left: -700px;
+  /* padding-bottom: 60px; */
+}
+
+.layer .container .infos p b {
+  color: var(--based-color-peanut-butter-crust, #c9a489);
+  font-family: Zilla Slab;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: 1.8px;
+}
+
+.layer .container .infos p i {
+  color: var(--based-color-peanut-butter-crust, #c9a489);
+  font-family: La Belle Aurore, serif;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  letter-spacing: 1.92px;
+}
+
+.layer .container .infos button {
+  width: 400px;
+  height: 80px;
+  display: flex;
+  padding: 16px 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 100px;
+  background: var(--complement-ruined-smores, #0c0d12);
+  padding-top: 20px;
+  margin-left: -510px;
+  color: var(--complement-white, #fff);
+  font-family: Zilla Slab, serif;
+  font-size: 20px;
+}
+
+.layer .container .infos button:hover {
+  background-color: cornflowerblue;
+  color: rgb(255, 255, 255);
+  transition: all 0.1s linear;
+}
+
+/* ====================== TRENDING ========================= */
+
+.trending {
+  width: 1440px;
+  height: 1330px;
+  background: var(--background-300, #f9f5ea);
+}
+.trending h2 {
+  width: 297px;
+  color: var(--dark-300, #555659);
+  text-align: center;
+  font-family: Zilla Slab, serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 28.8px */
+  letter-spacing: 4.32px;
+  padding: 150px 10px 120px 520px;
+}
+
+.trending h5 {
+  color: var(--complement-ruined-smores, #0c0d12);
+  text-align: center;
+  font-family: Zilla Slab, serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%; /* 44.8px */
+  letter-spacing: 0.96px;
+  margin-left: -230px;
+  margin-top: -100px;
+}
+
+.card {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 40px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  width: 1300px;
+  height: 600px;
+  margin-left: 30px;
+}
+
+.card::-webkit-scrollbar {
+  color: red;
+}
+
+.card-item {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.card-item img {
+  width: 290px;
+  height: 290px;
+  border-radius: 22px;
+  margin: 45px;
+  cursor: pointer;
+}
+.card-item h5 {
+  color: var(--complement-ruined-smores, #0c0d12);
+  font-family: Zilla Slab, serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 160%; /* 32px */
+  letter-spacing: 0.6px;
+  margin-top: -42px;
+  margin-left: 50px;
+}
+
+.card-item h5 > span {
+  margin-left: 70px;
+}
+
+.card-item h5 > sup > del {
+  opacity: 50%;
+}
+
+.card-item p {
+  color: var(--complement-ruined-smores, #0c0d12);
+  font-family: Zilla Slab, serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  letter-spacing: 0.48px;
+  margin-left: 50px;
+}
+
+.card-item button {
+  display: flex;
+  width: 300px;
+  height: 80px;
+  padding: 12px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 30px;
+  border: 1px solid var(--based-color-peanut-butter-crust, #c9a489);
+  color: var(--complement-ruined-smores, #0c0d12);
+  font-family: ZillaSlab, serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%; /* 32px */
+  font-variant: all-small-caps;
+  letter-spacing: 0.6px;
+  margin-left: 40px;
+  cursor: pointer;
+}
+
+.card-item button > span img {
+  width: 48px;
+  height: 48px;
+  margin-top: 55px;
+}
+
+.trending .sale {
+  width: 1280px;
+  height: 400px;
+  position: absolute;
+}
+
+.trending .sale .content {
+  position: absolute;
+  width: 355px;
+  color: var(--complement-white, #fff);
+  text-align: right;
+  font-family: Zilla Slab, serif;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%; /* 104px */
+  letter-spacing: 2.4px;
+}
+
+.trending .sale .content span {
+  position: absolute;
+  margin: 120px 20px 20px 110px;
+}
+
+.trending .sale .content .percent {
+  position: absolute;
+  width: 184px;
+  height: 87px;
+  margin: 130px 20px 20px -85px;
+}
+
+.trending .sale .content h5 {
+  width: 328px;
+  height: 90px;
+  color: var(--complement-white, #fff);
+  font-family: Zilla Slab, serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  letter-spacing: 0.95px;
+  position: absolute;
+  margin: 220px 20px 20px 270px;
+}
+
+.trending .sale .sale-img {
+  margin: 96px 190px 80px 60px;
+  border-radius: 5px;
+  background: linear-gradient(
+      0deg,
+      rgba(201, 164, 137, 0.3) 0%,
+      rgba(201, 164, 137, 0.3) 100%
+    ),
+    lightgray -172.25px 210px / 126.914% 100% no-repeat;
+  background-size: cover;
+}
+
+.trending .sale button {
+  display: inline-flex;
+  padding: 16px 64px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 100px;
+  border: 1px solid var(--based-color-peanut-butter-crust, #c9a489);
+  margin-left: 550px;
+  cursor: pointer;
+}
+
+.trending .sale button:hover {
+  transition: all 0.4s infinite;
+  background: blue;
+}
+
+.trending .sale button > a:hover {
+  transition: 0.4s linear;
+  color: rgb(0, 98, 211);
+  font-style: italic;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.trending .sale button > a {
+  text-transform: uppercase;
+  color: var(--complement-ruined-smores, #0c0d12);
+  font-family: Zilla Slab, serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  letter-spacing: 0.6px;
+}
+
+.future {
+  width: 100%;
+  height: 2402px;
+}
+.future .container {
+  margin-top: 350px;
+  width: 1515px;
+  height: 2402px;
+  background: var(--secondary-color-100, #ecdfdb);
+}
+
+.future .container .head {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.future .container .head img {
+  width: 1280px;
+  height: 566px;
+  background: linear-gradient(
+      0deg,
+      rgba(201, 164, 137, 0.3) 0%,
+      rgba(201, 164, 137, 0.3) 100%
+    ),
+    url(<path-to-image>), lightgray 0px -302.097px / 100% 277.42% no-repeat;
+  margin: 80px auto 80px 80px;
+  border-radius: 0.8pc;
+}
+
+.future .container .head h5 {
+  width: 625px;
+  color: var(--complement-ruined-smores, #0c0d12);
+  font-family: Zilla Slab, serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 44.8px */
+  letter-spacing: 0.96px;
+  margin: -6pc 12pc 4pc 6pc;
+}
+
+.future .container .photo-s {
+  display: flex;
+  width: 1280px;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.future .container .photo-s {
+  width: 626px;
+  height: 693px;
+  background: url("./assets/images/Image\ \(16\).png");
+  border-radius: 12px;
+  margin: 26px 80px 90px 80px;
+}
+.future .container .photo-s span img {
+  position: absolute;
+  width: 614px;
+  height: 406px;
+  margin: 0 10px 50px 750px;
+  border-radius: 12px;
+}
+
+.future .container .photo-s span > h3 {
+  gap: 16px;
+  align-self: stretch;
+  margin: 440px 10px 50px 750px;
+  width: 614px;
+  height: 162px;
+}
+
+.future .container .photo-s span > h5 {
+  align-self: stretch;
+  margin: -140px 50px 50px 750px;
+  width: 614px;
+  height: 162px;
+}
+
+.future .container .photo-s span > h3 {
+  color: var(--complement-ruined-smores, #0c0d12);
+  font-family: Zilla slab, serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%; /* 56px */
+  letter-spacing: 1.2px;
+}
+
+.future .container .photo-s span > h5 {
+  align-self: stretch;
+  color: var(--complement-ruined-smores, #0c0d12);
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: 0.96px;
+  font-family: Zilla Slab, sans-serif;
+  src: url(./assets/fonts/Zilla_Slab/ZillaSlab-Regular.ttf);
+}
+
+.future .container .calm {
+  display: flex;
+  width: 1280px;
+  align-items: flex-start;
+  gap: 40px;
+}
+.future .container .calm span {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.future .container .calm span {
+  margin: 5px 16px 40px 80px;
+}
+
+.future .container .calm span img {
+  width: 626px;
+  height: 406px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+}
+
+.future .container .calm span h3 {
+  color: var(--complement-ruined-smores, #0c0d12);
+  font-family: Zilla Slab, serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%;
+  letter-spacing: 1.2px;
+  margin: -10px auto 40px -20px;
+}
+
+.future .container .calm span h5 {
+  margin: -40px auto 40px -20px;
+  align-self: stretch;
+  color: var(--complement-ruined-smores, #0c0d12);
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: 0.96px;
+  font-family: Zilla Slab, sans-serif;
+  src: url(./assets/fonts/Zilla_Slab/ZillaSlab-Regular.ttf);
+}
+
+.future .container .calm .photo .girl {
+  background: linear-gradient(
+      0deg,
+      rgba(201, 164, 137, 0.1) 0%,
+      rgba(201, 164, 137, 0.1) 100%
+    ),
+    lightgray 50% / cover no-repeat;
+  border-radius: 12px;
+}
+
+.future .container .calm .photo .girl {
+  width: 614px;
+  height: 693px;
+  border-radius: 12px;
+}
+
+.hlpro {
+  width: 1515px;
+  height: 1024px;
+  background: var(--primary-color-500, #cead95);
+}
+
+.hlpro .container {
+  width: 1515px;
+  height: 1024px;
+  position: absolute;
+}
+
+.hlpro .container .heading {
+  width: 1197.685px;
+  color: #fff;
+  text-align: center;
+  font-family: Zilla Slab, sans-serif;
+  font-size: 128px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%;
+  letter-spacing: 3.84px;
+  position: relative;
+  margin-top: 208.76px;
+  margin-left: 87px;
+  margin-right: 225px;
+  margin-bottom: -379px;
+}
+
+.hlpro .container .heading > span {
+  position: relative;
+  z-index: 2;
+}
+
+.hlpro .container small {
+  background: url("./assets/images/Image\ \(10\).png");
+  background-repeat: no-repeat;
+  position: absolute;
+  background-position: center;
+  margin: -75px 30px 30px 65px;
+  width: 1200px;
+  height: 1100px;
+}
+
+.hlpro .container .find {
+  display: flex;
+  width: 289px;
+  padding: 16px 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 100px;
+  background: var(--complement-ruined-smores, #0c0d12);
+  margin: 880px 80px 576px 575px;
+}
+
+.hlpro .container .find > a {
+  cursor: pointer;
+  color: var(--complement-white, #fff);
+  font-family: Zilla Slab, serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+}
+
+body {
+  overflow-y: scroll;
+  height: 1500px;
+  width: 1430px;
+}
